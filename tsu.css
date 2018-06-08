@@ -1,0 +1,305 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+/* .header-wrapper {
+    width: 100%;
+    background-color: SlateBlue;
+    height: 125px;
+} */
+
+header {
+    background-color: SlateBlue;
+}
+
+.logo1 {
+    width: 475px;
+    height: 105px;
+    background-image: url(https://www.tsu.ge/i/logo_ge.png);
+}
+
+
+.icons a {
+    padding-right: 10px;
+}
+
+
+.search {
+    height: 124px;
+    width: 210px;
+    padding-right: 0;
+    padding-left: 130px;
+    margin-top: 0.5em;
+}
+
+.icons {
+    margin-left: 100px;
+    margin-bottom: 8px;
+    width: 100px;
+}
+
+.select {
+    margin-left: 24px;
+    margin-top: 16px;
+    width: 157px;
+    font-size: 10px;
+    height: 20px;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.right {
+    height: 25px;
+    margin-top: 4.3em; 
+}
+.logo {
+    margin-left: 10em;
+    margin-top: 0.5em;
+}
+
+.menu {
+    background-color: #95B9C7;
+    
+    
+}
+article {
+    display: inline-block;
+}
+nav {
+    display: inline-block;
+}
+.aside1 {
+    display: inline-block;
+}
+.aside2 {
+    display: inline-block;
+}
+.menu ul li {
+    list-style-type: none;
+    display:inline-block;
+    margin-right: 0px;
+    padding: 0.5em 0;
+    color: white;
+}
+
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding-bottom: 3px;
+}
+nav ul li {
+    list-style-type: none;
+}
+#social_network a {
+    display:  block;;
+    padding: 1px;
+    width: 25px;
+    height: 25px;
+}
+
+
+#social_network .fb {
+    background: url(https://www.tsu.ge/i/facebook.gif), no-repeat;
+}
+#social_network .you {
+    background: url(https://www.tsu.ge/i/youtube.gif), no-repeat;
+}
+#social_network .for {
+    background: url(https://www.tsu.ge/i/forum-b.jpg), no-repeat;
+}
+#social_network .rss {
+    background: url(https://www.tsu.ge/i/rss.gif), no-repeat;
+}
+#social_network .tv {
+    background: url(https://www.tsu.ge/i/tv.png), no-repeat;
+}
+
+
+.img {
+    height:100px;
+}
+
+.box {
+    width: 192px;
+    margin-right: 45px;
+    float: left;
+}
+
+.title-line {
+    width: 191px;
+    height: 7px;
+    border-bottom: 1px solid #0c79bf;
+    margin-bottom: 9px;
+}
+.mtavr_ge {
+    font-family: BPG Nino Mtavruli;
+    font-size: 17px;
+    letter-spacing: 2px;
+    padding-left: 5px;
+}
+.box-in a {
+    display: block;
+    text-decoration: none;
+    color: #117bc0;
+}
+.size_small {
+    font-size: 13px;
+}
+.slides_container777 img {
+    padding-right: 10px;
+    float: left;
+}
+
+.footer-line {
+    border-top: 1px solid #0a79c0;
+    padding-top: 15px;
+    width: 936px;
+    margin-left: 10px;
+}
+
+
+.mig {
+    width: 400px;
+    height: 400px
+
+}
+
+
+
+
+  .grid {
+    display: grid;
+    grid-template-columns: 15em auto 8em;
+    grid-template-rows: 8em  3em  auto auto auto 10em 2em;
+    box-sizing: border-box;
+}
+
+
+
+
+@media screen and (min-width: 640px){
+    header {
+    grid-column: 1/4;
+    grid-row: 1;
+}
+menu {
+    grid-column: 1/4;
+    grid-row: 2;
+}
+   nav {
+     grid-column: 1;
+     grid-row: 3/6;
+     margin-left: 30%;
+     margin-top:  8%;
+ }
+ article {
+     grid-column: 2;
+     grid-row: 3/6;
+     margin-left: 20%;
+     
+ }
+ .aside2 {
+     grid-column: 3;
+     grid-row: 3/6;
+     margin-top: 30%;
+
+ }
+ .aside1{
+     grid-column: 1/4;
+     grid-row: 6; 
+     margin-left: 5%
+
+}
+footer {
+    grid-column: 1/4;
+    grid-row: 7;
+    margin-left: 5%;
+}   
+}
+
+@media screen and ( min-width: 480px) and (max-width: 639px){
+    header {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+   menu {
+    grid-column: 1;
+    grid-row: 2/4;
+}
+   nav {
+     grid-column: 1;
+     grid-row: 4/6;
+  
+ }
+ article {
+     grid-column: 2/4;
+     grid-row: 4/6;
+     
+ }
+ .aside2 {
+     grid-column: 3;
+     grid-row: 3/6;
+    
+ }
+ .aside1{
+     grid-column: 1/4;
+     grid-row: 6; 
+    
+
+}
+footer {
+    grid-column: 1/4;
+    grid-row: 7;
+  
+}   
+}
+
+    
+    @media screen and (max-width: 639px){
+        header {
+            grid-column: 1/4;
+            grid-row: 1;
+         }
+         menu {
+             grid-column: 1/4;
+             grid-row: 2;
+         }
+            nav {
+              grid-column: 1/4;
+              grid-row: 3;
+              
+          }
+          article {
+              grid-column: 1/4;
+              grid-row: 4;
+              
+              
+          }
+          .aside2 {
+              grid-column: 1/4;
+              grid-row: 5;
+              
+         
+          }
+          .aside1{
+              grid-column: 1/4;
+              grid-row: 6; 
+              
+         
+         }
+         footer {
+             grid-column: 1/4;
+             grid-row: 7;
+             
+         }   
+}
