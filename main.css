@@ -109,7 +109,7 @@ section{
 }
 aside{
     grid-area: left;
-    background-color:#7FFF00;
+    background-color: #00008B;
 }
 nav {
     grid-area: menu;
