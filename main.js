@@ -1,4 +1,4 @@
-let date = new Date(2018, 3, 30);
+let date = new Date(2018, 3, 28);
 let add = document.getElementById("add");
 // add buttton addEventListener
 add.addEventListener('click',function generateHTML(){
@@ -10,27 +10,9 @@ add.addEventListener('click',function generateHTML(){
     let childelement1 = document.createElement('div')
     childelement1.className = 'number0'
     tagname.appendChild(childelement1)
-    // appending date to the number0 class fr each day
-    if(date.getDate() == 30) {
-      childelement1.textContent = date.toLocaleDateString("en-au", {weekday: 'short', month: "short",day: "numeric"}).replace(',' ,' ');
-      date.setDate(date.getDate()+2);
-    }
-      else if(date.getDay() == '1') {
-       childelement1.textContent = date.toLocaleDateString("en-au", {weekday: 'short', month: "short",day: "numeric"}).replace(',',' ');
-      date.setDate(date.getDate()+2);
-    }
-     else if(date.getDay() == '3'){
-        childelement1.textContent = date.toLocaleDateString("en-au", {weekday: 'short', month: "short",day: "numeric"}).replace(',',' ');
-       date.setDate(date.getDate()+2);
-      }
-      else if(date.getDay() == '5'){
-         childelement1.textContent = date.toLocaleDateString("en-au", {weekday: 'short', month: "short",day: "numeric"}).replace(',', ' ');
-       date.setDate(date.getDate()+1);
-      }
-        else if(date.getDay() == '6'){
-         childelement1.textContent = date.toLocaleDateString("en-au", {weekday: 'short', month: "short",day: "numeric"}).replace(',',' ');
-       date.setDate(date.getDate()+2);
-      }
+    childelement1.textContent = FormattedDate() //adding date to the firstchild
+    // appending date to the number0 class for each day
+    
       // creating 15 divs along with firstchild div
        for(k = 1; k < 16; k++){
         let  childelement = document.createElement('div');
@@ -46,6 +28,22 @@ add.addEventListener('click',function generateHTML(){
    box();
    
 })
+// date function
+function FormattedDate() {
+if(date.getDay() == '1' || date.getDay() == '3' ||date.getDay() == '6' ) {
+  date = new Date(date.getTime() + 2*(24*60*60*1000))
+  let ModDate = date.toString();
+  let SplitDate = ModDate.split(" ");
+  return `${SplitDate[0]} ${SplitDate[1]} ${SplitDate[2]}  `
+}
+  else  if(date.getDay() == '5'){
+    date = new Date(date.getTime() + (24*60*60*1000))
+    let ModDate = date.toString();
+  let SplitDate = ModDate.split(" ");
+  return `${SplitDate[0]} ${SplitDate[1]} ${SplitDate[2]}  `
+  }
+}
+  
 function event(x){
   let input = prompt("enter");
   if(input > 5){
@@ -56,7 +54,7 @@ function event(x){
   }
   else{
     x.target.textContent = input;
-    console.log(input);
+    // console.log(input);
     }
   if(x.target.textContent == "0"){
     x.target.style.backgroundColor = "red";
@@ -79,18 +77,10 @@ remove.addEventListener('click', function remove() {
         let elem = document.getElementsByClassName("tagname")
         elem[elem.length-1].remove();
 // removing last added date        
-if(date.getDay() == '1' ) {
+if(date.getDay() == '1' || date.getDay() == '3' || date.getDay() == '5') {
   date.setDate(date.getDate()-2);
 
 }
-else if(date.getDay() == '3'){
-  date.setDate(date.getDate()-2);
-  
- }
- else if(date.getDay() == '5'){
-   date.setDate(date.getDate()-2);
-  
- }
    else if(date.getDay() == '6'){
      date.setDate(date.getDate()-1);
   
@@ -133,7 +123,7 @@ else if(date.getDay() == '3'){
       let miss = document.getElementById('missed')
       miss.appendChild(textnode)
 
- // calculating average of each row and saving the results to array     
+ // calculating average of each row and saving the results to an array     
       let arr = [];
 for (i = 1; i <= 15; i++) {
    let innerSum = Array.from(
@@ -145,7 +135,7 @@ for (i = 1; i <= 15; i++) {
 
   arr.push(innerSum);
 }
- // appending average value of each row in the corresponding cell   
+ // appending average value of each row to the corresponding cell   
 let average = document.getElementsByClassName('average')
 for(i=0; i<average.length; i++) {
   if(average[i].firstChild){

@@ -109,7 +109,7 @@ section{
 }
 aside{
     grid-area: left;
-    background-color: #00008B;
+    background-color: #00008B
 }
 nav {
     grid-area: menu;
@@ -134,10 +134,13 @@ article {
     "left table"
 
 }
-#add {
-    margin-left: 200px;
-}
 
+nav div:first-child {
+    justify-self: end;
+}
+#remove{
+    justify-self: center;
+}
 
 
 
