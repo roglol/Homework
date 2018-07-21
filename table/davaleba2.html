@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>davaleba</title>
+    <style>
+    textarea {
+        resize:none;
+    }
+    
+    table, th, td {
+        border:1px solid black;
+        border-collapse:collapse;
+    }
+      
+
+    </style>
+</head>
+<body>
+        <table width="400" >
+                
+                <tr>
+                    <th>Control Type</th>
+                    <th>Data</th>
+                    <th>Control</th>
+                </tr>
+                <tr>
+                    <td>Text box</td>
+                    <td>Name:</td>
+                    <td><form>
+                        <label>  <input type="text"  value="Enter name"  ></label> 
+                     </form></td>
+                </tr>
+                <tr>
+                        <td>Password</td>
+                        <td>Password:</td>
+                        <td><label>  <input type="text"></label> </td>
+                </tr>
+                <tr><td>Text area</td>
+                    <td>Address:</td>
+                    <td><textarea  raws="7" cols="21">Enter address</textarea></td>
+                </tr>
+                <tr>
+                    <td>Drop down list</td>
+                    <td>Area:</td>
+                    <td><form>
+                            <select name="regions[]" >
+                                    <option value="Center">Center</option>
+                                <option value="district">District</option>
+                                <option value="country">Country</option>
+                                        
+                                </select>
+                    
+                    </form></td> 
+                    </tr>
+                    <tr>
+                        <td>Check box</td>
+                        <td>Hobbies:</td>
+                        <td><input type="checkbox"  value="Sport">Sport <br>
+                            <input type="checkbox" value="Reading">Reading<br>
+                            <input type="checkbox" value="T.V">T.V<br>
+                            <input type="checkbox" value="Internet">Internet<br>
+                        
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                            <td>Radio Buttons</td>
+                            <td>Gender:</td>
+                            <td><fieldset>
+                                    <legend>Gender selection</legend>
+                                        <input type="radio" name="Male" checked > Male<br>
+                                        <input type="radio" name="Female" >Female
+                 </fieldse></td> </tr>
+                 <tr>
+                         <td>File upload</td>
+                        <td>Your image:</td>
+                        <td> <form action="https://stackoverflow.com/questions/2906582/how-to-create-an-html-button-that-acts-like-a-link" ><button type="submit" >Choose File</button>
+                        No file chosen</form></td>
+                        
+                 </tr>
+                 <tr>
+                     <td>Buttons</td>
+                     <td>Actions:</td>
+                     <td><button type="Submit">Submit</button>
+                        <button type="Reset">Reset</button>
+                        <button type="Button">Button</button>
+                    </td>
+                 </tr>
+ </table>
+    
+</body>
+</html>

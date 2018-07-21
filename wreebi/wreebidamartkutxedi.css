@@ -1,0 +1,15 @@
+.fig_1:hover ~ .rect {
+    fill: green;
+}
+.fig_2:hover ~ .rect {
+    fill:yellow;
+}
+.fig_3:hover ~ .rect {
+    fill:pink;
+}
+.fig_4:hover ~ .rect {
+    fill:blue;
+}
+.fig_5:hover ~ .rect {
+    fill:red;
+}

@@ -1,0 +1,59 @@
+div {
+    height: 150px;
+    width: 150px;
+    display: inline-block
+}
+
+body {
+    max-width: 600px;
+    margin: auto;
+}
+.box1 {
+    background-color: blue;
+}
+.box2 {
+    background-color: red;
+}
+.box3 {
+    background-color: green;
+}
+.box4 {
+    background-color: black;
+}
+.box5 {
+    background-color: orange;
+}
+.box6 {
+    background-color:  violet;
+}
+.box7 {
+    background-color: yellow;
+}
+.box8 {
+    background-color: aquamarine
+}
+.box9 {
+    background-color: purple
+}
+.box10 {
+    background-color:black;
+}
+.box11 {
+    background-color: black
+}
+.box12 {
+    background-color: black;
+}
+
+button {
+    background-color: green;
+    border: 1px solid;
+    width: 10%;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 20px;
+}
