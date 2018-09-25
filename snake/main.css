@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    background-color: #9bba5a ;
+    position: relative;
+    font-family: sans-serif
+}
+canvas{
+    margin-left: 5px;
+    margin-top: 5px;
+    border: 3px black solid;
+}
+nav{
+    position:absolute;
+    top:40px;
+    right: 70px;
+    display:none
+}
+nav p{
+    height: 20px;
+    margin:0px;
+    margin-bottom: 12px;
+}
+nav select {
+    display: block;
+    margin-bottom: 6px;
+    height:20px;
+}
+nav input {
+    margin-bottom: 6px; 
+    height: 20px
+}
+nav div:last-child{
+    margin-left: 5px;
+}
+
+
+.burgerSvg {
+   cursor:pointer;
+   position: absolute;
+   top :5px ;
+   right: 10px;
+   width: 30px;
+   height: 30px;
+}
+button {
+    display:none;
+    position:absolute;
+    right: 150px;
+    top:  230px
+}
+
