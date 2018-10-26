@@ -1,0 +1,24 @@
+doctype html
+html
+    head
+body
+    h1= title
+    div
+       p= `Mark -${car.mark}, Model -${car.model}, VIN -${car.vin}, Number - ${car.number}, Color - ${car.color}`
+       form(action=`http://localhost:3000/cars/edit?ide=${car.vin}` method="post", style={'margin-right': '10px'})
+        p
+            input(type="text", name="mark", placeholder="Mark")
+        p
+            input(type="text", name="model", placeholder="Model")
+        p
+            input(type="number", name="vin", placeholder="VIN")
+        p
+            input(type="number", name="number", placeholder="number")
+        p
+            input(type="text", name="color", placeholder="color")
+        p New Owner:
+        p  
+            input(type="number", name="id", placeholder="ownerId")
+        p
+            button(type="submit") Edit
+        a(href='http://localhost:3000') Go Home

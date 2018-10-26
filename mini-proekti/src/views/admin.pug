@@ -1,0 +1,16 @@
+doctype html
+html
+    head
+body
+    h1= title
+    form(action=`http://localhost:3000/admin`, method="post", style={'margin-right': '10px'})
+        p
+            input(type="number", name="id", placeholder="User ID")
+        p
+            button(type="submit") Disable
+    form(action=`http://localhost:3000/admin`, method="post", style={'margin-right': '10px'})
+        p
+            input(type="number", name="id", placeholder="User ID")
+        p
+            button(type="submit") Enable
+    a(href='http://localhost:3000') Go Home

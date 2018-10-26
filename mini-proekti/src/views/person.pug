@@ -1,0 +1,23 @@
+doctype html
+html
+    head
+body
+    h1= title
+    div
+       p= `id -${person.id}, name -${person.name}, surname -${person.surname}, birthday - ${person.birthday}`
+       if person.park
+        p Ownes:
+          each car in person.park
+            p= `Mark -${car.mark}, Model -${car.model}, VIN -${car.vin}, Number - ${car.number}, Color - ${car.color}`
+       form(action=`http://localhost:3000/persons/edit?ide=${person.id}`, method="post", style={'margin-right': '10px'})
+        p
+            input(type="text", name="name", placeholder="Name")
+        p
+            input(type="text", name="surname", placeholder="Surname")
+        p
+            input(type="number", name="id", placeholder="ID")
+        p
+            input(type="text", name="birthday", placeholder="Birthday")
+        p
+            button(type="submit") Edit
+        a(href='http://localhost:3000') Go Home

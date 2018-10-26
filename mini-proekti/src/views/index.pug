@@ -1,0 +1,56 @@
+doctype html
+html
+    head
+body
+    div
+       form(action="http://localhost:3000/admin", method="get", style={'margin-right': '10px'})
+         p
+            button(type="submit") Admin
+    div(style={'display': 'flex'})
+       form(action="", method="post", style={'margin-right': '10px'})
+        h1 Add Person
+        p
+            input(type="text", name="name", placeholder="Name", required)
+        p
+            input(type="text", name="surname", placeholder="Surname", required)
+        p
+            input(type="number", name="id", placeholder="ID", required)
+        p
+            input(type="text", name="birthday", placeholder="Birthday", required)
+        p
+            button(type="submit") Add Person
+
+
+       form(action="http://localhost:3000", method="post")
+        h1 Add Car
+        p
+            input(type="text", name="mark", placeholder="Mark", required)
+        p
+            input(type="text", name="model", placeholder="Model", required)
+        p
+            input(type="number", name="vin", placeholder="VIN", required)
+        p
+            input(type="number", name="number", placeholder="number", required)
+        p
+            input(type="text", name="color", placeholder="color", required)
+        h1 Owner
+        p
+            input(type="number", name="personId", placeholder="Owner ID", required)
+        p
+            button(type="submit") Add Car
+    div(style={'display': 'flex'})
+       form(action='http://localhost:3000/persons', method="post", style={'margin-right': '10px'})
+        p
+            input(type="number", name="id", placeholder="ID", required)
+        p
+            button(type="submit") Search Person
+       form(action="http://localhost:3000/cars", method="post", style={'margin-right': '10px'})
+        p
+            input(type="number", name="vin", placeholder="VIN", required)
+        p
+            button(type="submit") Search Car
+    
+
+
+
+        
