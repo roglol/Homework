@@ -309,6 +309,7 @@ background:#ffffff;
 color:#fba688;
 border:none;
 border-radius:20px;
+margin-left:10px;
 padding: 0px 4px;
 width: 110px;
 height:34px;
@@ -1101,7 +1102,7 @@ padding-right:15px;
 }
 .article-left--section_starter--info button {
     min-width:110px;
-    margin-left: 20%;
+    margin-left: 25%;
 }
 
 .article-left--section_advanced div:nth-child(2){
