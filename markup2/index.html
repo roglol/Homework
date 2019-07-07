@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="wrapper">
+     <header>
+         <div class="register-header">
+             <span>Don't have an account?</span>
+             <button type="button" class="register-button">Get Started</button>
+         </div>
+         <div class="login-header hideForm">
+                <span>Already have an account?</span> 
+                <button type="button" class="login--header__button">Login</button>
+            </div>
+     </header>
+     <section class="section-wrapper">
+            <section class="login-form login showForm">
+                      <img class="close-button" src="images/group.png">
+                        <h1>Account Login</h1>
+                        <div class="login-info">
+                            <span>Log into Your 365DropShip Account</span>
+                            <span class="hide-warning login-warning">Incorrect Username or Password</span>
+                            <hr/>
+                        </div>
+                        <form action="" method="">
+                            <div>
+                                <img class="envelope" src="images/noun-email.png">
+                                <input
+                                class = "login-email"
+                                onfocus="this.placeholder =  ''"
+                                onblur="this.placeholder = 'Email Address'"
+                                type="email" 
+                                name="email" 
+                                placeholder="Email Address"><br>
+                            </div>
+                            <div>
+                                 <img class="lock" src="images/noun-locked.png">
+                                 <input 
+                                 class = "login-password"
+                                 onfocus="this.placeholder =  ''"
+                                 onblur="this.placeholder = 'Password'"
+                                 type="password" 
+                                 name="password" 
+                                 placeholder="Password"><br>
+                            </div>
+                            <div class="login-submit"> 
+                            <a href="#">Forgot password?</a>
+                            <button type="submit" class="login-button">Login</button>
+                            </div>
+                        </form>
+                </section>
+<section class="register-form hideForm">
+    <img class="close-button" src="images/group.png">
+</button>  
+<h1>Get started with the <span>Starter Plan</span></h1>
+<div class="register-info">
+    <span>7 Days FREE. $9/month. No contracts, cancel anytime.</span>
+    <hr/>
+</div>
+<form action="" method="">
+    <div class="register--form__inputs">
+            <div>
+                   <input
+                    class="register-fname" 
+                    type="text"  
+                    name="fname" 
+                    placeholder=" "
+                    >
+                    <span class="placeholder">First Name</span>
+                    <span class="register-warning hide-warning">Please enter your first name.</span>
+                </div>
+                <div>
+                     <input 
+                     class="register-lname"
+                     type="text" 
+                     name="lname" 
+                     placeholder=" ">
+                     <span class="placeholder">Last Name</span>
+                     <span class="register-warning hide-warning">Please enter your last name.</span>
+                </div>
+                <div>
+                    <input 
+                    class="register-email"
+                    type="email" 
+                    name="email" 
+                    placeholder=" ">
+                    <span class="placeholder">Email Address</span>
+                    <span class="register-warning hide-warning">Please enter a valid email address.</span>
+               </div>
+               <div>
+                <input 
+                class="register-number"
+                type="pnumber" 
+                name="phone" 
+                placeholder=" ">
+                <span class="placeholder">Phone Number</span>
+                <span class="register-warning hide-warning">Please enter a valid phone number.</span>
+            </div>
+            <div>
+                <input 
+                class="register-password"
+                type="password" 
+                name="password" 
+                placeholder=" ">
+                <span class="placeholder">Password</span>
+                <span class="register-warning hide-warning">Your password must be at least 6 characters long.</span>
+    </div>
+</div>
+<button type="submit" class="register--form__button">Signup</button>
+<footer>
+        <span>By clicking "Sign Up" I agree to 365dropship's</span>
+        <a href="#">Terms of Service</a>
+</footer>
+</form>
+</section>
+<section class="payment-form hideForm">
+    <img class="close-button" src="images/group.png">
+        <h1>Last step towards empowering your online business</h1>
+        <div class="payment-info">
+          <a href="#">Billed only when 7 days FREE trial are over</a>
+        </div>
+    <div class="payment-table">
+       <div>
+           <h2>Starter</h2>
+           <p>All the basics for starting a new online </br> business</p>
+    </div>
+    <div>
+        <span>$9</span>
+        <sup>&nbsp;00&nbsp;/</sup>
+        <sup>mo</sup>
+    </div>
+    </div>
+    <form action="" method="">
+        <div class="payment--form__inputs">
+                <div>
+                      
+                        <input 
+                        class="card-number"
+                        type="text" 
+                        name="curdNumber" 
+                        maxlength="19"
+                        placeholder=" ">
+                        <span>Card Number</span>
+                        <span class="payment-warning hide-warning">Please enter a valid card number</span>
+                        <img src="images/visa-logo.png" class="hide-card">
+                    </div>
+                    <div>
+                         
+                         <input 
+                         class="card-month"
+                         type="text" 
+                         name="month" 
+                         maxlength="2"
+                         placeholder=" ">
+                         <span>MM</span>
+                    </div>
+                    <div>
+                      <span class="separator">/</span>
+                        <input 
+                        class="card-year"
+                        type="text" 
+                        name="year" 
+                        maxlength="2"
+                        placeholder=" ">
+                        <span>YY</span>
+                   </div>
+                    <div>
+                    
+                        <input 
+                        class="card-cvv"
+                        type="text" 
+                        name="cvv" 
+                        maxlength="3"
+                        placeholder=" ">
+                        <span>CVV</span>
+                   </div>
+    </div>
+    <div  class="payment--form__footer"> 
+        <div>
+        <p>  <img src="images/noun-lock.png"> 
+            <span>Secure credit card payment</span>
+        </p>
+        <p>This is a secure 128-bit SSL encrypted </br>payment</p>
+        </div>
+        <div>
+        <button type="submit" class="payment--form__button" disabled='true'>Confirm & Finish</button>
+        </div>
+        </div>
+    
+    
+    </form>
+</section>
+<section class="last-section hideForm">
+      <div>
+        <img class="close-button" src="images/group.png"> 
+        <div class="noun-check">
+            <img  src="images/noun-check.png">
+        </div> 
+        <div class="last-section__article">
+           <h1>Thanks, You're all set!</h1>
+           <p>
+               An email confirming you registration was just sent to 
+               your mailbox You can already enjoy all the benefits
+           </br>of your chosen plan during your 7 FREE trial days
+           </p>
+           <button class="last-section__button">Let's Go</button>
+        </div>
+      </div>
+</section>
+     </section>
+    </div>
+   <script src="main.js"></script>
+</body>
+</html>
